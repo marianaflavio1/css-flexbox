@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+    /* 1 rem passa a valer 10px */
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    color: white;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    margin: 129px 21px;
+    position: relative;
+    display: inline-block;    
+}
+
+.obra {
+    position: absolute;
+    font-weight: 700;
+    font-size: 3rem;
+    bottom: 7rem;
+    left: 3rem;
+}
+
+.autor {
+    position: absolute;
+    font-weight: 300;
+    font-size: 1.7rem;
+    bottom: 4rem;
+    left: 3rem;
+}
+
