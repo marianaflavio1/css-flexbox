@@ -1,6 +1,6 @@
-@media (max-width: 700px) {
+@media (max-width: 1506px) {
 
-    body{
+    /* body{
         margin: 30px 0px;
     }
 
@@ -15,6 +15,10 @@
         margin: 0px 20px;
         position: relative;
         display: inline-block;
-    }
+    } */
 
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

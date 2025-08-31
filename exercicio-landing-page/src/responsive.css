@@ -1,0 +1,205 @@
+@media (max-width: 1440px) {
+
+    body .header .logo {
+        width: 20rem;
+        margin-top: 50px;
+    }
+
+    body .conteudo {
+        justify-content: center;
+        padding: 50px 8px;
+    }
+
+    .conteudo .mockup {
+        margin-left: 10px;
+    }
+
+    .conteudo .descricao{
+        width: 100%;
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .conteudo .descricao h1 {
+        font-size: 36px;
+    }
+
+    .conteudo .descricao p {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    body .conteudo .descricao .btn-registro {
+        font-size: 16px;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 70px;
+        padding-bottom: 50px;
+    }
+
+    .circulo-icone {
+        width: 50px; /* largura do círculo */
+        height: 50px; /* altura do círculo */
+        font-size: 20px; /* tamanho do símbolo (ícone) */
+    }
+}
+
+@media (max-width: 1024px) {
+
+    body .header .logo {
+        width: 15rem;
+        margin-top: 50px;
+    }
+
+    body .conteudo {
+        justify-content: center;
+        padding: 50px 8px;
+    }
+
+    .conteudo .mockup {
+        margin-left: 10px;
+    }
+
+    .conteudo .descricao{
+        width: 100%;
+        margin-right: 30px;
+        align-items: center;
+    }
+
+    .conteudo .descricao h1 {
+        font-size: 30px;
+    }
+
+    .conteudo .descricao p {
+        font-size: 20px;
+    }
+
+    body .conteudo .descricao .btn-registro {
+        font-size: 16px;
+        margin: 0 70px;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+        padding-bottom: 50px;
+    }
+
+    .circulo-icone {
+        width: 40px; /* largura do círculo */
+        height: 40px; /* altura do círculo */
+        font-size: 18px; /* tamanho do símbolo (ícone) */
+    }
+}
+
+@media (max-width: 768px) {
+
+    body .header .logo {
+        width: 12rem;
+    }
+
+    body .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 8px;
+    }
+
+    .conteudo .mockup {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .conteudo .descricao{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .conteudo .descricao h1 {
+        font-size: 30px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .conteudo .descricao p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    body .conteudo .descricao .btn-registro {
+        font-size: 20px;
+    }
+
+    footer .redes-sociais{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .circulo-icone {
+        width: 40px; /* largura do círculo */
+        height: 40px; /* altura do círculo */
+        font-size: 18px; /* tamanho do símbolo (ícone) */
+    }
+}
+
+@media (max-width: 425px) {
+
+    body {
+        background: url('/exercicio-landing-page/src/images/bg-mobile.svg') top center no-repeat;
+        background-color: var(--cor-de-fundo);
+        background-size: 100% auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    body .header .logo {
+        width: 15rem;
+        padding: 0 20px;
+    }
+
+    body .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 8px;
+    }
+
+    .conteudo .mockup {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .conteudo .descricao h1 {
+        font-size: 26px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .conteudo .descricao p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    body .conteudo .descricao .btn-registro {
+        font-size: 18px;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    footer .redes-sociais {
+        display: flex;
+    }
+
+    .circulo-icone {
+        width: 30px; /* largura do círculo */
+        height: 30px; /* altura do círculo */
+        font-size: 15px; /* tamanho do símbolo (ícone) */
+    }
+}

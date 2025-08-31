@@ -1,0 +1,96 @@
+body{
+    background: url('/exercicio-landing-page/src/images/bg-desktop.svg') center center no-repeat;
+    background-color: var(--cor-de-fundo);
+    background-size: cover;
+    
+    min-height: 100vh;  /* ocupa no mínimo a altura da tela */
+    height: auto;       /* deixa crescer só até onde precisa */
+
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna */
+    grid-template-rows: auto auto auto; /* 3 linhas */
+}
+
+body .header {
+    padding: 5vh 0 0 5vw; /* ajuste de posicionamento da logo */
+}
+
+body .header .logo {
+    width: 20rem;   /* ocupa 20rem do header na largura */
+    height: auto; /* mantém proporção na altura */
+}
+
+body .conteudo{
+    display: flex;
+    padding: 8vh 0 0 5vw;
+}
+
+.conteudo .mockup{
+    width: 60%; /* tamanho ocupado pelo mockup na tela */
+    height: auto;
+}
+
+.conteudo .descricao{
+    font-family: "Poppins", sans-serif;
+    padding: 5vh 0 0 3vw; /* Posicionamento do <h1>, <p> e <a> */
+}
+
+.conteudo .descricao h1{
+    text-align: left;
+    font-weight: 600;
+    text-transform: capitalize; /* A Primeira Letra Sempre Maiúscula */
+    color: #FFF;
+    font-size: 50px;
+    margin-bottom: 5vh; /* distância do <h1> para o <p> */
+}
+
+.conteudo .descricao p{
+    color: #FFF;
+    text-align: left;  
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 4vh;
+    padding-right: 25rem; /* Para o parágrafo ter o corte conforme design */
+}
+
+.conteudo .descricao .btn-registro{
+    color: var(--cor-de-fundo);
+    background-color: #FFF;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 15px 60px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* SOMBRA: desloca p/ direita, p/ baixo, borrado, cor */
+}
+
+.conteudo .descricao .btn-registro:hover{
+    background-color: var(--cor-de-hover);
+    color: #FFF;
+    transition: 0.3s;
+}
+
+footer .redes-sociais{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20vw;
+    gap: 15px;
+}
+
+.circulo-icone{
+  display: grid;
+  place-items: center; /* centralizar os ícones nos círculos */
+
+  width: 50px; /* largura do círculo */
+  height: 50px; /* altura do círculo */
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  color: #FFF;
+
+  font-size: 30px; /* tamanho do símbolo (ícone) */
+  line-height: 1; /* evita problema com a altura da linha */
+  transition: 0.3s; /* efeito menos duro */
+}
+
+.circulo-icone:hover{
+    color: var(--cor-de-hover); /* muda a cor do ícone */
+    border-color: var(--cor-de-hover); /* muda a cor da borda */
+}

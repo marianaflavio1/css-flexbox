@@ -1,120 +1,100 @@
+html{ 
+    font-size: 62.5%; /* 1 rem passa a valer 10px */
+}
+
 body {
-    font-family: "Public Sans", Arial, Helvetica, sans-serif;
-    margin: 30px;
+    font-family: "Public Sans", sans-serif;
+    margin: 3rem;
 }
 
-.container {
-    /* pai do logo e do menu */
+.container { /* pai do logo e do menu */
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-between; /* Já separa o menu da logo */
 }
 
-.logo {
-    /* pai do nome-empresa*/
+.logo { /* pai do nome-empresa*/
     display: flex;
+    }
 
+.menu { /* pai do itens-menu */
+    display: flex;
+    margin-left: auto; /* empurra o menu pra direita */
 }
 
-.nome-empresa {
-    /* filho */
+.nome-empresa { /* filho */
     font-weight: 800;
     align-self: center;
-    margin: 8px;
-    font-size: 20px;
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
-.menu {
-    /* pai do itens-menu */
-    display: flex;
-}
-
-.botao {     /* filho */
-    font-size: 15px;
+.botao { /* filho */
+    font-size: 1.5rem;
     background-color: white;
     font-weight: 400;
     cursor: pointer;
     display: flex;
     border: none;
     align-self: center;
-    padding: 7px;
-    margin: 10px;
+    padding: 0.7rem;
+    margin: 1rem;
 }
 
 .botao:hover {
     background-color: #5BC241;
     color: white;
-
 }
 
-.botao.cadastro {     /* filho */
-    font-size: 15px;
-    background-color: #5BC241;
+.botao.cadastro { /* filho */
     color: white;
-    border-radius: 5px;
-    font-weight: 400;
-    cursor: pointer;
-    display: flex;
-    border: none;
-    align-self: center;
-    padding: 7px;
-    margin: 10px;
+    background-color: #5BC241;
+    border-radius: 0.5rem;
 }
 
 .botao.cadastro:hover {
-    box-shadow: 0px 0px 10px green;
+    box-shadow: 0rem 0rem 1rem green;
 }
 
 /* TEM QUE SER DEFINIDO DO MAIOR PRO MENOR POR CAUSA DO EFEITO CASCATA! */
 
-@media (max-width: 580px) {
+@media (max-width: 375px) {
 
-    .container {
+    .container { /* pai de todo mundo */
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .container .menu {
-        float: none;
-        margin: 10px;
-        width: 233px;
-        height: 435px;
-
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
     }
 
-    .logo {         /* pai do nome-empresa*/
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0; /* Remove o margin-left do desktop */
+    }
+    
+    .logo { /* pai do nome-empresa*/
         display: flex;
         align-items: center;
-
-    }
-
-    .menu{
-        align-items: center;
         justify-content: center;
     }
 
-    .botao{
-        
-    }
-
-    .botao .cadastro {
-        
-        font-size: 40px;
-    }
-
-    .nome-empresa {         /* filho */
+    .nome-empresa { /* filho do logo */
         font-weight: 800;
-        align-self: center;
-        margin-left: 8px;
-        font-size: 40px;
+        margin-left: 0.8rem;
+        font-size: 4rem;
     }
 
+    .container .menu { /* Mexendo no menu que ta dentro do container */
+        margin-top: 5rem;
+    }
 
+    .botao { /* filho do menu */
+        font-size: 4rem;
+    }
+
+    .botao.cadastro {
+        font-size: 1.8rem;
+    }
 
 }

@@ -13,14 +13,12 @@ main{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .container {
     display: flex;
-    gap: 2rem;
-    margin: 129px 21px;
-    position: relative;
-    display: inline-block;    
+    position: relative; 
 }
 
 .obra {

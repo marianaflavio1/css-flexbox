@@ -1,0 +1,24 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: var(--cor-de-fundo);
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* para o body ter a altura da tela */
+}
+
+header .logo{
+    margin: 50px 80px;
+}
+
+main .container{
+    display: flex;
+    
+}
+
+.descricao{
+    display: flex;
+}
