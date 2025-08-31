@@ -1,5 +1,5 @@
 body{
-    background: url('/exercicio-landing-page/src/images/bg-desktop.svg') center center no-repeat;
+    background: url('images/bg-desktop.svg') center center no-repeat;
     background-color: var(--cor-de-fundo);
     background-size: cover;
     
